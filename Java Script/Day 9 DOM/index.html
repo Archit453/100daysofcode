@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Playground</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: tomato;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 8px;
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="whole">
+
+        <h1 id="title">DOM Playground</h1>
+
+        <p id="description">
+            This paragraph is here to practice DOM manipulation.
+        </p>
+
+        <input
+            name="Playground"
+            type="text"
+            id="username"
+            placeholder="Enter your name"
+        >
+
+        <button id="greetBtn">Greet</button>
+
+        <h3 id="output">Output appears here</h3>
+
+        <div class="box" id="box"></div>
+
+        <button id="colorBtn" class="Btn left-Btn">Change Box Color</button>
+        <button id="toggleBtn" class="Btn Right-Btn">Toggle Highlight</button>
+
+        <hr>
+
+        <h2>Todo List</h2>
+
+        <input
+            type="text"
+            id="todoInput"
+            placeholder="Add a task"
+        >
+
+        <button id="addTaskBtn">Add Task</button>
+
+        <ul id="taskList">
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
