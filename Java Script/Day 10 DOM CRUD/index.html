@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Playground</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background: tomato;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 8px;
+            width: 100%;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="whole">
+
+        <h1 id="title">DOM Playground</h1>
+        <div id = 'main-container' style = 'border: 3px solid cyan; padding-left: 3px'>
+          <p id="description1">
+              This paragraph is here to practice DOM manipulation.
+          </p>
+
+          <p id="description2">
+              This paragraph is here to practice DOM manipulation.
+          </p>
+          
+          <p id="description3">
+              This paragraph is here to practice DOM manipulation.
+          </p>
+        </div>
+        <input
+            name="Playground"
+            type="text"
+            id="username"
+            placeholder="Enter your name"
+        >
+
+        <button id="greetBtn">Greet</button>
+        <div id="event-playground" style="
+            border: 3px solid black;
+            padding: 20px;
+            margin-top: 30px;
+        ">
+
+            <h2>Event Playground</h2>
+
+            <div id="grandparent" style="
+                background: lightcoral;
+                padding: 30px;
+            ">Grand Parent
+                <div id="parent" style="
+                    background: lightblue;
+                    padding: 30px;
+                    margin-top: 15px;
+                ">Parent
+                    <div id="child" style="
+                        background: lightgreen;
+                        padding: 30px;
+                        margin-top: 15px;
+                    "> Child
+                        <button id="play-btn">
+                            Click Me
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+
+        <h2>Form Event Playground</h2>
+
+        <form id="test-form">
+            
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+            >
+
+            <br><br>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+            >
+
+            <br><br>
+            <select id="country">
+                <option value="">Choose Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Japan">Japan</option>
+            </select>
+
+            <br><br>
+            <div style="display: flex;">
+                <label for="agree">I_Agree</label>
+                <input type="checkbox" id="agree">
+            </div>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+        <h3 id="output">Output appears here</h3>
+
+        <div class="box" id="box"></div>
+
+        <button id="colorBtn" class="Btn left-Btn">Change Box Color</button>
+        <button id="toggleBtn" class="Btn Right-Btn">Toggle Highlight</button>
+
+        <hr>
+
+        <h2>Todo List</h2>
+
+        <input
+            type="text"
+            id="todoInput"
+            placeholder="Add a task"
+        >
+
+        <button id="addTaskBtn">Add Task</button>
+
+        <ul id="taskList">
+            <li>Learn HTML</li>
+            <li>Learn CSS</li>
+        </ul>
+
+    </div>
+    <!-- <script src="10_1_Editing_content_and_HTML.js"></script> -->
+    <script src="10_6_Phase.js"></script>
+</body>
+</html>
